@@ -1,0 +1,140 @@
+/* Multi Page */
+.p_bar {
+	margin: 1px 0px;
+	clear: both;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.p_bar a {
+	float: left;
+	padding: 1px 4px;
+	font-size: 12px;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.p_input {
+	border: 1px;
+	padding: 0px;
+	width: 40px;
+	height: 17px !important;
+	height: 15px;
+	margin: 0px;
+	background: #F1F5FB;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.p_total {
+	background-color: #F5FBFF;
+	border: 1px solid #000;
+	border-right: 0px solid #86B9D6;
+	font-weight: bold;
+}
+
+.p_pages {
+	background-color: #F5FBFF;
+	margin-right: 1px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+.page {
+	width: 100% !important;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	padding-top: 5px;
+	background: none !important;
+	border: 0 !important;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.page a {
+	font-size: 13px;
+	color: #666;
+	padding: 2px 4px;
+	margin: 0 2px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.page a:hover {
+	color: #FFF;
+	background: #0b8cc8;
+	border: 1px solid #1e739b !important;
+	text-decoration: none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background:url(../image/bg.gif) repeat-x;
+}
+
+.page span {
+	padding: 0;
+	margin: 0;
+	color: #999 !important;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+/*//////ҳ����ʽ/////////*/
+.pagination1 {
+
+	}
+
+.pagination1 .p_redirect {
+	margin-right: 5px;
+	margin-left: 5px;
+	background-color: #FFF;
+	border: 1px solid #ddd;/**/
+	font-size: 12px !important;
+	font-size: 13px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: rgb(0, 153, 255);
+	;
+}
+
+.pagination1 .p_redirect a:hover {
+	background:url(../image/bg.gif) repeat-x;
+	border: rgb(0, 153, 255) 1px solid; 
+	background-color:rgb(0, 153, 255); COLOR: #fff;
+}
+
+
+.pagination1 A {
+	PADDING-BOTTOM: 3px; MARGIN: 0px 5px 0px 0px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 3px; color:rgb(0, 153, 255);
+}
+.pagination1 A.p_num {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid;color:rgb(0, 153, 255);
+}
+.pagination1 A.p_num:hover {
+	color:#fff;
+	background-color:rgb(0, 153, 255);
+	background:url(../image/bg.gif) repeat-x;
+}
+.pagination1 A.p_curpage {
+	background:url(../image/bg.gif) repeat-x;
+	border: rgb(0, 153, 255) 1px solid; 
+	background-color:rgb(0, 153, 255); COLOR: #fff;
+}
+.pagination1 A.p_curpage:hover {
+	TEXT-DECORATION: none;
+}
+
+.pagination1 A.p_num {
+	-moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px
+}
+
+.pagination1 A {
+	-moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px
+}

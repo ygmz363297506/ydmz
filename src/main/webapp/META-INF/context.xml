@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE project>
+<Context>
+<!-- now-->
+             <Resource name="mysqlDS" 
+              auth="Container" 
+              type="javax.sql.DataSource" 
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              testWhileIdle="true"
+              testOnBorrow="true"
+              testOnReturn="false"
+              validationQuery="SELECT 1"
+              validationInterval="30000"
+              timeBetweenEvictionRunsMillis="30000"
+              maxActive="10" 
+              minIdle="2" 
+              maxWait="5000" 
+              initialSize="2"
+              removeAbandonedTimeout="60"
+              removeAbandoned="true"
+              logAbandoned="true"
+              minEvictableIdleTimeMillis="30000" 
+              jmxEnabled="true"
+              jdbcInterceptors=
+"org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+              username="smsuser" 
+              password="smsuser123" 
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://172.16.68.227:3306/smsbase?useUnicode=true&amp;characterEncoding=utf8"/>  
+              
+<!-- test -->
+	        <!--  <Resource name="mysqlDS" 
+              auth="Container" 
+              type="javax.sql.DataSource" 
+              factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+              testWhileIdle="true"
+              testOnBorrow="true"
+              testOnReturn="false"
+              validationQuery="SELECT 1"
+              validationInterval="30000"
+              timeBetweenEvictionRunsMillis="30000"
+              maxActive="10" 
+              minIdle="2" 
+              maxWait="5000" 
+              initialSize="2"
+              removeAbandonedTimeout="60"
+              removeAbandoned="true"
+              logAbandoned="true"
+              minEvictableIdleTimeMillis="30000" 
+              jmxEnabled="true"
+              jdbcInterceptors=
+"org.apache.tomcat.jdbc.pool.interceptor.ConnectionState;org.apache.tomcat.jdbc.pool.interceptor.StatementFinalizer"
+              username="fptcfront"
+			  password="fptcfront123"
+              driverClassName="com.mysql.jdbc.Driver"
+              url="jdbc:mysql://192.168.203.198:3306/test?useUnicode=true&amp;characterEncoding=utf8"/>  -->
+              
+</Context>

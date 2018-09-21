@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="logback.xsd" scan="true" scanPeriod="60 seconds" debug="true">
+	<property name="APP_Name" value="mcc" />
+	<timestamp key="bySecond" datePattern="yyyyMMdd'T'HHmmss" />
+	<contextName>${APP_Name}</contextName>
+	
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{15} %M - %msg%n</pattern>
+		</encoder>
+	</appender>  
+	
+  <appender name="FILELOG" class="ch.qos.logback.core.rolling.RollingFileAppender">   
+    <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">   
+      <fileNamePattern>${catalina.home}/logs/app.%d{yyyyMMdd}.log</fileNamePattern>   
+      <maxHistory>30</maxHistory>    
+    </rollingPolicy>   
+    <encoder>   
+      <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level - %msg%n</pattern>   
+    </encoder>   
+  </appender>
+  
+	<logger name="com.sanss.mcc" level="debug" additivity="false">
+		<appender-ref ref="STDOUT" />  
+	</logger>
+	
+	<root level="info">
+		<appender-ref ref="STDOUT" /> 
+	</root>
+</configuration>
